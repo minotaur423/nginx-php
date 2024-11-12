@@ -22,6 +22,8 @@ COPY conf/www.conf /etc/php-fpm.d/www.conf
 
 COPY conf/start.sh /nginx_php/start.sh
 
+COPY fruit /nginx_php
+
 COPY webroot/index.php /nginx_php/index.php
 
 RUN chmod a+x /nginx_php/start.sh
